@@ -1,4 +1,4 @@
-The program is based on the discord.py package (https://discordpy.readthedocs.io/en/stable/)
+The program is based on the discord.py package.
 
 ##### Bot operating procedure:
 1) Get channel by id

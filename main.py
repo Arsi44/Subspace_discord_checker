@@ -1,8 +1,18 @@
 import json
-
 import discord
 
-from config import TOKEN, CHAT_ID, YOUR_ID
+# load variables
+import os
+from dotenv import load_dotenv
+dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
+if os.path.exists(dotenv_path):
+    load_dotenv(dotenv_path)
+
+TOKEN = os.getenv("TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
+YOUR_ID = os.getenv("YOUR_ID")
+
+
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -56,4 +66,5 @@ async def on_message(message):
 
 
 if __name__ == '__main__':
+    print(TOKEN)
     client.run(TOKEN)
