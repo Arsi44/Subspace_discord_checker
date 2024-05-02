@@ -1,5 +1,20 @@
-The program is based on the discord.py package.
+The program is based on the discord.py package especially to help the SubSpace project. The package consists of several bots and will be supplemented as needed.
 
+_All functionality can be launched inside one single bot. The description is divided into logical modules for convenience._
+
+### 1. A bot that collects statistics on people who are currently using a specific Discord voice channel
+The bot connects to the specified chat and simply checks its participants. It receives those who are currently in the voice channel and adds points to them.
+As a result, we can display the scores both inside the discord and in a text file.
+As result we have such output:
+Participants:
+discrod_user1 - 11
+discrod_user2 - 15
+discrod_user3 - 20
+discrod_user4 - 17
+...
+
+
+### 2. A bot that scans user message history to count them
 ##### Bot operating procedure:
 1) Get channel by id
 2) Get messages from channel
