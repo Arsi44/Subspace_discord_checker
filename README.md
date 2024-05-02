@@ -6,13 +6,14 @@ _All functionality can be launched inside one single bot. The description is div
 The bot connects to the specified chat and simply checks its participants. It receives those who are currently in the voice channel and adds points to them.
 As a result, we can display the scores both inside the discord and in a text file.
 As result we have such output:
+```
 Participants:
 discrod_user1 - 11
 discrod_user2 - 15
 discrod_user3 - 20
 discrod_user4 - 17
 ...
-
+```
 
 ### 2. A bot that scans user message history to count them
 ##### Bot operating procedure:
